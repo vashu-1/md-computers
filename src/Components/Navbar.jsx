@@ -3,14 +3,13 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { IoMdSearch } from "react-icons/io";
 import { IoLogInOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
 
 function Navbar() {
   return (
     <nav className="bg-[#0D0E10] p-4">
       <div className="container  mx-auto flex justify-between items-center">
-        <Link to="/" className="text-white text-lg font-bold">
-          Brand
-        </Link>
+        <Logo/>
         <ul className="flex space-x-4">
           <li>
             <Link to="/" className="text-gray-300 hover:text-white">
