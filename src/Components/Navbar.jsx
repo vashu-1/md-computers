@@ -1,41 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { IoMdSearch } from "react-icons/io";
 import { IoLogInOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+function Navbar() {
   return (
-    <div>
-      <nav>
-        <div className="logo">
-          <img
-            src="https://mdcomputers.in/image/catalog/Logo/08-03-25/mdcomputers-logo-08.png"
-            alt=""
-          />
-        </div>
-        <ul>
+    <nav className="bg-[#0D0E10] p-4">
+      <div className="container  mx-auto flex justify-between items-center">
+        <Link to="/" className="text-white text-lg font-bold">
+          Brand
+        </Link>
+        <ul className="flex space-x-4">
           <li>
-            <link to="#Gaming Gear">GAMING GEARS</link>
+            <Link to="/" className="text-gray-300 hover:text-white">
+              Home
+            </Link>
           </li>
           <li>
-            <link to="#Gaming Gear">STORE</link>
+            <Link to="/login" className="text-gray-300 hover:text-white">
+              Login
+            </Link>
           </li>
           <li>
-            <link to="#Gaming Gear">BUILD YOUR PC</link>
-          </li>
-          <li>
-            <link to="#Gaming Gear">MERCHANDISE</link>
+            <Link to="/about" className="text-gray-300 hover:text-white">
+              About
+            </Link>
           </li>
         </ul>
-        <div>
+        <div className="flex items-center gap-4">
           <HiOutlineShoppingBag />
           <IoMdSearch />
           <IoLogInOutline />
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
-};
+}
 
 export default Navbar;
