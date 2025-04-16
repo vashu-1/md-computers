@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
+import MobileNoVerification from '../Components/common/MobileNoVerification'; // Correct import path
 
-const signup = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Signup = () => {
+  // Render the verification component in 'signup' mode
+  return <MobileNoVerification mode="signup" />;
+};
 
-export default signup
+export default Signup;
