@@ -7,8 +7,8 @@ import { BiGitCompare } from "react-icons/bi";
 
 function Navbar() {
   return (
-    <nav className="bg-secondary text-white shadow-md">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
+    <div className=" text-white shadow-md">
+      <div className="container z-99 absolute mx-auto flex justify-between items-center py-4 px-6">
         <Link to="/" className="text-2xl font-bold text-primary">
           Brand
         </Link>
@@ -17,22 +17,28 @@ function Navbar() {
             <input
               type="text"
               placeholder="Search"
-              className="w-72 px-4 py-2 rounded-full bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-72 px-4 py-1 rounded-full bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-primary"
             />
             <IoMdSearch className="absolute top-2.5 right-4 text-gray-400" />
           </div>
-          <Link
-            to="/login"
-            className="px-4 py-2 rounded-full bg-primary text-white hover:bg-primary-dark transition"
-          >
-            Login
-          </Link>
+          <IoLogInOutline className="text-2xl cursor-pointer hover:text-primary transition" />
           <HiOutlineShoppingBag className="text-2xl cursor-pointer hover:text-primary transition" />
           <HiOutlineHeart className="text-2xl cursor-pointer hover:text-primary transition" />
           <BiGitCompare className="text-2xl cursor-pointer hover:text-primary transition" />
         </div>
       </div>
-    </nav>
+      <div className="">
+        <div className="bg-secondary relative bg-cover bg-center h-screen flex items-center justify-center text-white ">
+          <img
+            src="https://startersites.io/blocksy/e-bike/wp-content/uploads/2024/05/background-pattern-2.svg"
+            alt="Background SVG"
+            className="absolute inset-0 w-full h-full object-cover opacity-8"
+          />
+          <h1 className="text-4xl font-bold z-10">Welcome to Our Website</h1>
+          <p className="mt-4 text-lg z-10">Your journey starts here</p>
+        </div>
+      </div>
+    </div>
   );
 }
 
