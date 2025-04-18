@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import Navbar from "./Components/Navbar";
+import Banner from "./Components/Home/Banner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Home from "./Components/Home";
 
@@ -14,6 +15,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Navbar />
+      <Banner />
       <Routes>
         <Route path="/" />
         <Route path="/login" element={<Login />} />

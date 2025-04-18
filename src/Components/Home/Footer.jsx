@@ -21,55 +21,56 @@ const Footer = () => {
   );
 
   return (
-    <footer className="bg-black text-gray-400 mt-[30rem]">
+    <footer className="bg-secondary text-gray-400">
       {/* Features Section */}
-      <div className="container mx-auto px-4 py-12 border-b border-gray-700/50">
+      <div className="container mx-auto px-6 py-12 border-b border-gray-700">
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
-          {/* Feature Item 1 */}
-          <li className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
-            <TbTruckDelivery className="text-yellow-500 text-3xl mb-2 md:mb-0 flex-shrink-0" />
+          <li className="flex items-center gap-4">
+            <TbTruckDelivery className="text-yellow-500 text-4xl" />
             <div>
-              <p className="font-medium text-gray-200">Free Delivery</p>
-              <p className="text-sm text-gray-500">Across India</p>
+              <p className="font-semibold text-gray-200 text-lg">
+                Free Delivery
+              </p>
+              <p className="text-sm text-gray-400">Across India</p>
             </div>
           </li>
-          {/* Feature Item 2 */}
-          <li className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
-            <RiCustomerServiceLine className="text-yellow-500 text-3xl mb-2 md:mb-0 flex-shrink-0" />
+          <li className="flex items-center gap-4">
+            <RiCustomerServiceLine className="text-yellow-500 text-4xl" />
             <div>
-              <p className="font-medium text-gray-200">Customer Support</p>
-              <p className="text-sm text-gray-500">Dedicated Help Line</p>
+              <p className="font-semibold text-gray-200 text-lg">
+                Customer Support
+              </p>
+              <p className="text-sm text-gray-400">Dedicated Help Line</p>
             </div>
           </li>
-          {/* Feature Item 3 */}
-          <li className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
-            <RiSecurePaymentLine className="text-yellow-500 text-3xl mb-2 md:mb-0 flex-shrink-0" />
+          <li className="flex items-center gap-4">
+            <RiSecurePaymentLine className="text-yellow-500 text-4xl" />
             <div>
-              <p className="font-medium text-gray-200">Secure Payments</p>
-              <p className="text-sm text-gray-500">100% Secure Transaction</p>
+              <p className="font-semibold text-gray-200 text-lg">
+                Secure Payments
+              </p>
+              <p className="text-sm text-gray-400">100% Secure Transaction</p>
             </div>
           </li>
-          {/* Feature Item 4 */}
-          <li className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
-            <TbShieldCheckered className="text-yellow-500 text-3xl mb-2 md:mb-0 flex-shrink-0" />
+          <li className="flex items-center gap-4">
+            <TbShieldCheckered className="text-yellow-500 text-4xl" />
             <div>
-              <p className="font-medium text-gray-200">Warranty Assurance</p>
-              <p className="text-sm text-gray-500">Guaranteed Quality</p>
+              <p className="font-semibold text-gray-200 text-lg">
+                Warranty Assurance
+              </p>
+              <p className="text-sm text-gray-400">Guaranteed Quality</p>
             </div>
           </li>
         </ul>
       </div>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <div className="mb-4">
-              <span className="text-xl font-semibold text-gray-100">
-                Your Logo Here
-              </span>{" "}
-              {/* Placeholder */}
-            </div>
-            <p className="text-sm mb-6">
+            <h5 className="text-xl font-bold text-gray-100 mb-4">
+              Your Logo Here
+            </h5>
+            <p className="text-sm mb-6 text-gray-300">
               Your one-stop shop for the latest computer hardware, components,
               and accessories at the best prices.
             </p>
@@ -129,7 +130,7 @@ const Footer = () => {
 
           <div>
             <SectionTitle>Connect</SectionTitle>
-            <p className="text-sm mb-4">
+            <p className="text-sm mb-4 text-gray-300">
               <a
                 href="mailto:support@citycomputers.in"
                 className="hover:text-gray-100"
@@ -186,8 +187,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-black border-t border-gray-700/50 py-6">
-        <div className="container mx-auto px-4 text-center text-xs text-gray-500 sm:flex sm:justify-between sm:items-center">
+      <div className="bg-gray-800 border-t border-gray-700 py-6">
+        <div className="container mx-auto px-6 text-center text-xs text-gray-500 sm:flex sm:justify-between sm:items-center">
           <p className="mb-4 sm:mb-0">
             &copy; {new Date().getFullYear()} City Computers. All Rights
             Reserved.
