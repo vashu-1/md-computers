@@ -4,8 +4,30 @@ import { HiOutlineShoppingBag, HiOutlineHeart } from "react-icons/hi2";
 import { IoMdSearch } from "react-icons/io";
 import { IoLogInOutline } from "react-icons/io5";
 import { BiGitCompare } from "react-icons/bi";
+import { useEffect } from "react";
 
 function Navbar() {
+  // useEffect(() => {
+  //   const counters = document.querySelectorAll(".counter");
+  //   counters.forEach((counter) => {
+  //     counter.innerText = "0";
+
+  //     const updateCounter = () => {
+  //       const target = +counter.getAttribute("data-target");
+  //       const current = +counter.innerText;
+  //       const increment = target / 2000;
+
+  //       if (current < target) {
+  //         counter.innerText = `${Math.ceil(current + increment)}`;
+  //         setTimeout(updateCounter, 10);
+  //       } else {
+  //         counter.innerText = target;
+  //       }
+  //     };
+
+  //     updateCounter();
+  //   });
+  // }, []);
   return (
     <div className=" text-white shadow-md">
       <div className="container z-99 absolute mx-auto flex justify-between items-center py-4 px-6">
@@ -35,7 +57,7 @@ function Navbar() {
           className="absolute inset-0 w-full h-full object-cover opacity-8"
         />
         <div className="flex w-full px-10 z-10">
-          <div className="w-1/2 flex flex-col justify-center pl-10">
+          <div className="w-2/5 flex flex-col justify-center pl-10">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-16 h-0.5 bg-primary"></div>
               <div className="uppercase tracking-wider text-2xl">
@@ -71,24 +93,53 @@ function Navbar() {
                 </svg>
               </button>
             </div>
+            {/* <div className="flex gap-8 mt-10">
+              <div className="text-center">
+                <h2
+                  className="text-5xl font-bold text-white counter"
+                  data-target="100"
+                >
+                  0
+                </h2>
+                <p className="text-sm text-gray-300">Worldwide Customers</p>
+              </div>
+              <div className="text-center">
+                <h2
+                  className="text-5xl font-bold text-white counter"
+                  data-target="50"
+                >
+                  0
+                </h2>
+                <p className="text-sm text-gray-300">Awesome Reviews</p>
+              </div>
+              <div className="text-center">
+                <h2
+                  className="text-5xl font-bold text-white counter"
+                  data-target="10"
+                >
+                  0
+                </h2>
+                <p className="text-sm text-gray-300">Worldwide Shops</p>
+              </div>
+            </div> */}
           </div>
-          <div className="flex w-2/5 mx-auto gap-1 absolute left-[54%] top-[8%]">
+          <div className="flex w-3/5  gap-2 absolute left-[44%] top-[8%]">
             <img
               src="../../banner/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
               alt="Background SVG"
-              className="inset-0 w-6/9 object-cover"
+              className="inset-0 w-4/9 object-cover"
             />
 
-            <div className="w-full flex flex-col absolute left-[64%] top-[18%] gap-1 ">
+            <div className="w-full flex flex-col absolute left-[48%] top-[16%] gap-4 ">
               <img
                 src="/banner/seyed-sina-fazeli-XP9JF6jyRGc-unsplash.jpg"
                 alt="Create Account Image"
-                className="w-1/2 h-auto rounded-lg shadow-lg"
+                className="w-2/5 h-auto rounded-lg shadow-lg"
               />
               <img
-                src="/public/footer/payment-method.svg"
+                src="/banner/tianyi-ma-WiONHd_zYI4-unsplash.jpg"
                 alt="Payment Methods"
-                className="w-1/3 h-auto rounded-lg shadow-lg"
+                className="w-2/5 h-auto rounded-lg shadow-lg"
               />
             </div>
           </div>
