@@ -5,7 +5,7 @@ import { MdArrowOutward } from 'react-icons/md'; // Import the arrow icon
 const MackbookPlus = () => {
   return (
     // Relative container for positioning overlay content
-    <div className='relative w-full h-screen overflow-hidden my-20'> {/* Use h-screen for full viewport height */}
+    <div className='relative w-full h-screen overflow-hidden my-8'> {/* Use h-screen for full viewport height */}
 
       {/* Video Background */}
       <video
