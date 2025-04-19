@@ -4,7 +4,6 @@ import { HiOutlineShoppingBag, HiOutlineHeart } from "react-icons/hi2";
 import { IoMdSearch } from "react-icons/io";
 import { IoLogInOutline } from "react-icons/io5";
 import { BiGitCompare } from "react-icons/bi";
-import { useEffect } from "react";
 
 function Navbar() {
   // useEffect(() => {
