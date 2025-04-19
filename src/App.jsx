@@ -19,7 +19,6 @@ function App() {
       <Header />
       <Navbar />
       <Banner />
-      <Products/>
       <Routes>
         <Route path="/" />
         <Route path="/login" element={<Login />} />
