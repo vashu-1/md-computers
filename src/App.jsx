@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Navbar />
-      <Banner />
+      {/* <Banner /> */}
       <Routes>
         <Route path="/" />
         <Route path="/login" element={<Login />} />

@@ -27,15 +27,71 @@ function Navbar() {
           <BiGitCompare className="text-2xl cursor-pointer hover:text-primary transition" />
         </div>
       </div>
-      <div className="">
-        <div className="bg-secondary relative bg-cover bg-center h-screen flex items-center justify-center text-white ">
-          <img
-            src="https://startersites.io/blocksy/e-bike/wp-content/uploads/2024/05/background-pattern-2.svg"
-            alt="Background SVG"
-            className="absolute inset-0 w-full h-full object-cover opacity-8"
-          />
-          <h1 className="text-4xl font-bold z-10">Welcome to Our Website</h1>
-          <p className="mt-4 text-lg z-10">Your journey starts here</p>
+
+      <div className="bg-secondary bg-cover bg-center h-screen text-white relative flex items-center">
+        <img
+          src="https://startersites.io/blocksy/e-bike/wp-content/uploads/2024/05/background-pattern-2.svg"
+          alt="Background SVG"
+          className="absolute inset-0 w-full h-full object-cover opacity-8"
+        />
+        <div className="flex w-full px-10 z-10">
+          <div className="w-1/2 flex flex-col justify-center pl-10">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-16 h-0.5 bg-primary"></div>
+              <div className="uppercase tracking-wider text-2xl">
+                <p>Empowering Your Digital World</p>
+              </div>
+            </div>
+            <h1 className="text-6xl uppercase font-bold mt-3">
+              Delivering Power Where Performance Begins
+            </h1>
+
+            <div className="flex gap-8 mt-10">
+              <button className="px-6 py-4 text-xl bg-primary text-white font-semibold rounded-md shadow-md hover:bg-yellow-600 transition flex items-center gap-2">
+                Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                  fill="currentColor"
+                  className="w-4 h-4"
+                >
+                  <path d="M12 1v10c0 .55-.45 1-1 1s-1-.45-1-1V3.41l-8.29 8.3c-.2.2-.45.29-.71.29s-.51-.1-.71-.29a.996.996 0 0 1 0-1.41L8.59 2H1c-.55 0-1-.45-1-1s.45-1 1-1h10a1.019 1.019 0 0 1 1 1Z" />
+                </svg>
+              </button>
+
+              <button className="px-6 py-4 text-xl bg-transparent text-white font-semibold rounded-md shadow-md hover:text-primary transition flex items-center gap-2">
+                Get Started
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                  fill="currentColor"
+                  className="w-4 h-4"
+                >
+                  <path d="M12 1v10c0 .55-.45 1-1 1s-1-.45-1-1V3.41l-8.29 8.3c-.2.2-.45.29-.71.29s-.51-.1-.71-.29a.996.996 0 0 1 0-1.41L8.59 2H1c-.55 0-1-.45-1-1s.45-1 1-1h10a1.019 1.019 0 0 1 1 1Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="flex w-2/5 mx-auto gap-1 absolute left-[54%] top-[8%]">
+            <img
+              src="../../banner/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
+              alt="Background SVG"
+              className="inset-0 w-6/9 object-cover"
+            />
+
+            <div className="w-full flex flex-col absolute left-[64%] top-[18%] gap-1 ">
+              <img
+                src="/banner/seyed-sina-fazeli-XP9JF6jyRGc-unsplash.jpg"
+                alt="Create Account Image"
+                className="w-1/2 h-auto rounded-lg shadow-lg"
+              />
+              <img
+                src="/public/footer/payment-method.svg"
+                alt="Payment Methods"
+                className="w-1/3 h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
